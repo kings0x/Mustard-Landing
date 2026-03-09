@@ -34,28 +34,7 @@ export default function Hero() {
             Explore Active Projects
           </button>
         </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-neutral-900">
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-              500+
-            </div>
-            <p className="text-sm sm:text-base text-neutral-400">Active Creators</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-              $10M+
-            </div>
-            <p className="text-sm sm:text-base text-neutral-400">Community Funded</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-              2,000+
-            </div>
-            <p className="text-sm sm:text-base text-neutral-400">Products Shipped</p>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
