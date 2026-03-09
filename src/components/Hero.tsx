@@ -21,7 +21,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-center text-neutral-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
-          Mustard fixes the core problem growing ecosystems face: great ideas struggle to get funded, validated, and shipped while supporters lack transparency and control. We turn the community into active participants, not passive observers.
+          Validate Ideas, Align with users, Fund with transparency 
         </p>
 
         {/* CTA Buttons */}
