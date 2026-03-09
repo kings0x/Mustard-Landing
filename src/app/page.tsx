@@ -14,7 +14,6 @@ export default function Home() {
       <Hero />
       <TheProblem />
       <HowItWorks />
-      <MilestoneAccounting />
       <Testimonials />
       <ReadyToBuild />
       <Footer />
