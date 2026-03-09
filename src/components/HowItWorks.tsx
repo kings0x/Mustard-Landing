@@ -83,17 +83,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <p className="text-neutral-300 mb-4">{step.description}</p>
-              <ul className="space-y-2 inline-block text-left md:block">
-                {step.details.map((detail, idx) => (
-                  <li
-                    key={idx}
-                    className="text-sm text-neutral-400 flex items-center gap-2"
-                  >
-                    <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
-                    {detail}
-                  </li>
-                ))}
-              </ul>
+              
             </div>
           ))}
         </div>
@@ -101,7 +91,7 @@ export default function HowItWorks() {
         {/* Why This Process Works */}
         <div className="bg-[#0A0A0A] rounded-lg p-6 sm:p-8 md:p-12 border border-neutral-900">
           <h3 className="text-xl sm:text-2xl font-bold text-white text-center mb-8 sm:mb-12">
-            Why This Process Works
+            Built For Everyone 
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
