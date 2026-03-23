@@ -13,8 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-gray-100 antialiased overflow-x-hidden selection:bg-yellow-400 selection:text-black">
-        <div className="relative w-full overflow-x-hidden min-h-screen flex flex-col">
+      <body className="text-gray-100 antialiased selection:bg-yellow-400 selection:text-black">
+        <div className="relative w-full min-h-screen flex flex-col overflow-clip">
           {children}
         </div>
       </body>

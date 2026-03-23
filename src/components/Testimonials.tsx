@@ -23,7 +23,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="bg-[#050505] py-12 sm:py-16 md:py-24">
+    <section className="bg-black py-12 sm:py-16 md:py-24">
       <div className="container-custom">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-4 sm:mb-6 leading-tight">
           Trusted by Builders & Investors
@@ -36,7 +36,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#0A0A0A] rounded-lg p-6 sm:p-8 border border-neutral-900 shadow-sm hover:shadow-md transition-shadow text-center md:text-left"
+              className="bg-black/40 backdrop-blur-sm rounded-lg p-6 sm:p-8 border border-white/10 shadow-sm hover:shadow-primary/5 transition-all text-center md:text-left hover:border-primary/50"
             >
               <p className="text-neutral-300 mb-6 italic text-base sm:text-lg">
                 "{testimonial.quote}"

@@ -1,59 +1,44 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import WordRotator from "./WordRotator";
+
+
 
 export default function Hero() {
   return (
-    <section className="bg-[#050505] py-12 md:py-24">
-      <div className="container-custom">
-        {/* Subheading */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 text-neutral-400 mb-6">
-            <span>⛓️</span>
-            <span className="text-sm font-medium">Smart Contract-Powered Accountability</span>
-          </div>
-        </div>
+    <section className="relative bg-transparent min-h-[calc(100vh-73px)] flex items-center py-8 md:py-16 overflow-hidden">
+      {/* Background Glows */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary opacity-5 blur-[120px] rounded-full pointer-events-none -translate-y-1/2" />
+      <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-primary opacity-[0.03] blur-[150px] rounded-full pointer-events-none translate-x-1/4" />
 
-        {/* Main Heading */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center text-white mb-8 leading-tight sm:leading-none">
-          Ideas validated by<br className="hidden sm:inline" /> the community.<br className="hidden sm:inline" /> Funded<br className="hidden sm:inline" /> transparently.<br className="hidden sm:inline" /> Built with<br className="hidden sm:inline" /> accountability.
-        </h1>
+      <div className="container-custom w-full relative z-10">
+        <div className="flex flex-col items-center text-center gap-12 lg:gap-16 max-w-4xl mx-auto">
+          {/* Text Block */}
+          <div className="flex-1 min-w-0">
 
-        {/* Description */}
-        <p className="text-center text-neutral-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
-          Mustard fixes the core problem growing ecosystems face: great ideas struggle to get funded, validated, and shipped while supporters lack transparency and control. We turn the community into active participants, not passive observers.
-        </p>
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink mb-8 leading-tight sm:leading-none">
+              Validate ideas.
+              <br className="hidden sm:inline" /> <span className="text-primary">Launch with</span>{" "}
+              <WordRotator />
+            </h1>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <button className="btn-primary inline-flex items-center gap-2 group">
-            Launch Your Campaign
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
-          </button>
-          <button className="btn-secondary">
-            Explore Active Projects
-          </button>
-        </div>
+            {/* Description */}
+            <p className="text-muted text-sm sm:text-base md:text-lg max-w-xl mb-10 leading-relaxed">
+              Validate ideas. Align with users. Fund with transparency.
+            </p>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-neutral-900">
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-              500+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full sm:w-auto">
+              <button className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 group text-sm sm:text-base py-3">
+                List Your Project
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
+              </button>
+              <button className="btn-secondary w-full sm:w-auto text-sm sm:text-base py-3">
+                Explore Validated Ideas
+              </button>
             </div>
-            <p className="text-sm sm:text-base text-neutral-400">Active Creators</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-              $10M+
-            </div>
-            <p className="text-sm sm:text-base text-neutral-400">Community Funded</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-              2,000+
-            </div>
-            <p className="text-sm sm:text-base text-neutral-400">Products Shipped</p>
           </div>
         </div>
       </div>
