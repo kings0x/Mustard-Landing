@@ -18,10 +18,12 @@ export default function Hero() {
           <div className="flex-1 min-w-0">
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink mb-8 leading-tight sm:leading-none">
-              Validate ideas.
-              <br className="hidden sm:inline" /> <span className="text-primary">Launch with</span>{" "}
-              <WordRotator />
+            <h1 className="text-[3rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-ink mb-8 leading-[0.95] sm:leading-none">
+              <span className="block sm:inline">Validate Ideas</span>
+              <span className="block sm:inline sm:ml-2 text-primary">Launch with</span>
+              <span className="block sm:inline sm:ml-2 whitespace-nowrap">
+                <WordRotator />
+              </span>
             </h1>
 
             {/* Description */}
@@ -31,11 +33,11 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full sm:w-auto">
-              <button className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 group text-sm sm:text-base py-3">
+              <button className="btn-primary inline-flex items-center justify-center gap-2 group text-sm sm:text-base py-3 px-5 sm:px-6 w-auto min-w-[11.25rem] sm:min-w-0">
                 List Your Project
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
               </button>
-              <button className="btn-secondary w-full sm:w-auto text-sm sm:text-base py-3">
+              <button className="btn-secondary inline-flex items-center justify-center text-sm sm:text-base py-3 px-4 sm:px-6 w-auto min-w-[10.5rem] sm:min-w-0">
                 Explore Validated Ideas
               </button>
             </div>

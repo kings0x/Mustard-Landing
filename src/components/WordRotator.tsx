@@ -15,7 +15,7 @@ export default function WordRotator() {
     }, []);
 
     return (
-        <span className="inline-grid overflow-hidden bg-primary px-2 sm:px-3 lg:px-4 leading-[0.9] mt-2 md:mt-3 align-baseline shadow-sm text-white">
+        <span className="inline-grid overflow-hidden bg-primary px-2 sm:px-3 lg:px-4 leading-[0.9] mt-0 sm:mt-2 md:mt-3 align-baseline shadow-sm text-white">
             {words.map((word, index) => {
                 const isActive = index === currentIndex;
                 // The word right before the current one (with wrap-around) is the exiting word
